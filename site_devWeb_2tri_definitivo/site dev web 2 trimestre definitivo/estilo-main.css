@@ -1,0 +1,65 @@
+.container {
+    display: grid;
+    margin: 0;
+    grid-template-columns: 80% 20%;
+    padding: 10px 5%;
+    grid-template-areas: 
+    
+    "header header"
+    "main aside"
+    "footer footer"
+    ;
+}
+
+header {
+    grid-area: header;
+    border: 1px solid  rgba(165, 148, 132, 1);
+    background-color: dimgrey;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+nav{
+    background-color: rgb(228, 228, 92);
+    justify-content: space-between;
+    grid-area: nav;
+    height: 50px;
+    border: 1px solid black;
+}
+nav > a{
+    display: inline-block;
+    color: rgba(38, 28, 19, 1);
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 100%;
+}
+nav > a:hover{
+    background-color: black;
+    color: ghostwhite;
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+main {
+    grid-area: main;
+    height: 1240px;
+    border: 2px solid black;
+}
+
+aside {
+    height: 1240px;
+    grid-area: aside;
+    border: 2px solid black;
+}
+
+footer {
+    height: 100px;
+    grid-area: footer;
+    background-color: darkgrey;
+}
+#logo{
+    width: 100px;
+    height: 100px;
+    background-color: dimgrey;
+}
