@@ -10,7 +10,6 @@
     "footer footer"
     ;
 }
-
 header {
     grid-area: header;
     border: 1px solid  rgba(165, 148, 132, 1);
@@ -30,7 +29,6 @@ nav > a{
     display: inline-block;
     color: rgba(38, 28, 19, 1);
     text-decoration: none;
-    margin-left: 10px;
     padding: 15px;
     font-weight: bold;
     font-size: 100%;
@@ -54,12 +52,24 @@ aside {
 }
 
 footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    clear: both;
     height: 100px;
     grid-area: footer;
-    background-color: darkgrey;
 }
 #logo{
+    width: 120px;
+    height: 120px;
+    background-color: dimgrey;
+}
+#txtFooter{
+padding: 1%;
+}
+#noticiaImg{
     width: 100px;
     height: 100px;
-    background-color: dimgrey;
+    border: 1px solid black;
 }
