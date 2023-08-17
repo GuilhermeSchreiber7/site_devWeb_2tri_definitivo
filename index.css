@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Tenor+Sans&display=swap');
+
+body{
+    background-color: rgb(173, 222, 255);
+    font-family: 'Roboto Slab', serif;
+}
 .container {
     display: grid;
     margin: 0;
@@ -41,17 +47,23 @@ nav > a:hover{
     color: ghostwhite;
     transform: scale(1.1);
     transition: all 0.2s ease-in-out;
+    border-radius: 3px;
+
 }
 main {
     grid-area: main;
     height: 1240px;
+    padding: 0px 15px 0px 15px;
     border: 2px solid black;
+    background-color: #e9e9e9;
+
 }
 
 aside {
     height: 1240px;
     grid-area: aside;
     border: 2px solid black;
+    background-color: #e9e9e9;
 }
 
 footer {
@@ -65,19 +77,19 @@ footer {
 }
 #logo{
     width: 420px;
-
     background-color: dimgrey;
 }
 #txtFooter{
 padding: 1%;
 }
 #noticiaImg{
-    float: left;
     height: 25%;
     width: 40%;
-    border: 1px solid black;
     margin: 3%;
+    
 }
 #imgMain{
-    
+   max-width: 400px;
+   max-height: 300px;
+   border-radius: 6px;
 }
